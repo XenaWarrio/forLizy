@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ForLizy</string>
+    <string name="firsttext">Лиза, это приложение было написано специально для тебя лучшими разбработчиками KuhnyaPoNocham. Чтобы ты больше никогда не забывала , почему злишься  на людей .</string>
+    <string name="end">С любовью , совершенно нeзнакомый тебе человек</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
