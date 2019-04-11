@@ -12,12 +12,11 @@ import android.widget.Button;
 
 import dx.queen.forlizy.reclycler.theme.RecyclerFragment;
 
-public class ForLizyFragment extends Fragment {
+public class ForLizyFragment extends Fragment  {
 
     public static ForLizyFragment newInstance() {
         
         Bundle args = new Bundle();
-        
         ForLizyFragment fragment = new ForLizyFragment();
         fragment.setArguments(args);
 
@@ -46,5 +45,6 @@ public class ForLizyFragment extends Fragment {
 
         return v;
     }
+
 
 }

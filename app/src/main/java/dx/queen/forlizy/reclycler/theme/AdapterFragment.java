@@ -6,10 +6,25 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import dx.queen.forlizy.MainActivity;
+import java.util.List;
+
 import dx.queen.forlizy.R;
+import dx.queen.forlizy.RecyclerListener;
 
 public class AdapterFragment  extends RecyclerView.Adapter<ViewHolderFragment>{
+
+    static List<Obidchik> listOFObidchik ;
+    private RecyclerListener listener;
+
+    public AdapterFragment( List<Obidchik> listOFObidchik) {
+        this.listOFObidchik = listOFObidchik;
+    }
+
+    public  static List<Obidchik> getListOFObidchik() {
+        return listOFObidchik;
+    }
+
+
 
     @NonNull
     @Override
@@ -19,12 +34,13 @@ public class AdapterFragment  extends RecyclerView.Adapter<ViewHolderFragment>{
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolderFragment viewHolderFragment, int i) {
+    public void onBindViewHolder(@NonNull ViewHolderFragment viewHolderFragment, int i ) {
+        viewHolderFragment.bind(listOFObidchik.get(i), listener , i);
 
     }
 
     @Override
     public int getItemCount() {
-        return MainActivity.getListOFObidchik().size();
+        return getListOFObidchik().size();
     }
 }

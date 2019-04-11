@@ -2,6 +2,7 @@ package dx.queen.forlizy.reclycler.theme;
 
 public class Obidchik {
 
+
     String nameO;
     String reason;
 
